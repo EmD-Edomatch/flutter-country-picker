@@ -7,6 +7,7 @@ import '../models/customization_builders.dart';
 Future<CountryCode?> showCountryCodePickerSheet({
   required BuildContext context,
   void Function(CountryCode code)? onCountryCodeTap,
+  final Widget? header=SizedBox();
   CustomizationBuilders? customizationBuilders,
   Color backgroundColor = Colors.white,
   double maxSize = 1,
@@ -38,6 +39,7 @@ Future<CountryCode?> showCountryCodePickerSheet({
       snap: snap,
       builder: (context, scrollController) {
         return CountryCodeSelector(
+          header: header,
           shape: shape,
           countryNameLocale: countryNameLocale,
           scrollController: scrollController,
