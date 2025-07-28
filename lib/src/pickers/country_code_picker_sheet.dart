@@ -8,7 +8,7 @@ import '../models/customization_builders.dart';
 Future<CountryCode?> showCountryCodePickerSheet({
   required BuildContext context,
   void Function(CountryCode code)? onCountryCodeTap,
-  final Widget? header,
+  required Widget header,
   CustomizationBuilders? customizationBuilders,
   Color backgroundColor = Colors.white,
   double maxSize = 1,
