@@ -79,6 +79,7 @@ class _CountryCodeSelectorState extends State<CountryCodeSelector> {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
+          widget.header ?? const SizedBox(),
           Visibility(
               visible: widget.customizationBuilders?.textFieldBuilder == null,
               replacement: widget.customizationBuilders?.textFieldBuilder
