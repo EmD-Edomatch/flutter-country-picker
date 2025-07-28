@@ -12,12 +12,14 @@ class CountryCodeSelector extends StatefulWidget {
   final ScrollController? scrollController;
   final Color backgroundColor;
   final ShapeBorder shape;
+  final Widget? header=SizedBox();
   final void Function(CountryCode code)? onCountryCodeTap;
   final CustomizationBuilders? customizationBuilders;
 
   CountryCodeSelector({
     super.key,
     this.scrollController,
+    this.header
     this.backgroundColor = Colors.white,
     required this.onCountryCodeTap,
     this.shape = const RoundedRectangleBorder(),
