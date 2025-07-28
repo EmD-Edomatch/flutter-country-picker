@@ -1,5 +1,6 @@
 import 'package:canopas_country_picker/src/utils/utils_functions.dart';
 import 'package:flutter/material.dart';
+
 import '../country_code_selector.dart';
 import '../models/country_code.dart';
 import '../models/customization_builders.dart';
@@ -7,7 +8,7 @@ import '../models/customization_builders.dart';
 Future<CountryCode?> showCountryCodePickerSheet({
   required BuildContext context,
   void Function(CountryCode code)? onCountryCodeTap,
-  final Widget? header=SizedBox();
+  final Widget? header=SizedBox(),
   CustomizationBuilders? customizationBuilders,
   Color backgroundColor = Colors.white,
   double maxSize = 1,
